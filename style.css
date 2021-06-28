@@ -22,7 +22,7 @@
     bottom: 0%;
     right: 0%;
     background: black;
-    color: #d2d2d7;
+    color: rgba(255, 255, 255, 0.801);
 }
 .hidden li.item{
     color: black;
@@ -95,6 +95,10 @@ nav span.fa-bars{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.nav >*:hover,.elements>*:hover,.hidden-nav>*:hover{
+    cursor: pointer;
+    color: white;
 }
 .nav span{
     font-size: 1.2rem;
@@ -235,6 +239,9 @@ footer ul{
     line-height: 2;
     border-bottom: 1px solid #d2d2d7;
 }
+footer .fa-apple:hover{
+    cursor: pointer;
+}
 footer .container .fab{
     font-size: 1.5em;
     color: #515154;
@@ -266,6 +273,11 @@ footer .container .fab{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.heading-links>*:hover,main .content a:hover,aside .aside a:hover,
+footer .chart li:hover,footer .contact .end p:last-child:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 @media(max-width:1300px){
     .container{
